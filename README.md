@@ -1,6 +1,7 @@
 # PIG
 dont use this
 
+File storage
 ```
 test.pigg
 - VARSTORSTRING.Vpigg

@@ -78,7 +78,6 @@ call integer private Youcantseeme
 - this is what you open now to compile your file
 
 # Things that need to be implemented:
-- build.bat file
 - if statements
 - other things
 - comments

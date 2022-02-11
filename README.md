@@ -21,12 +21,10 @@ Hello
 # TODO 
 
 - Var management system
-- Assign strings
-- Assign Integers
 - User Input
 
 Currently working on:
-> Var management system
+> user input
 
 # var mangangment system
 

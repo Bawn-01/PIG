@@ -120,12 +120,12 @@ with open(FILE, "r") as f:
         #Functions
         if "println" in line:
             fin = line.rstrip()
-            if "'" not in line:
+            if "\"" not in line:
                 exit("ERROR: cannot print int")
             finn = fin.replace("println", "")
             fn = finn.replace("(", "")
             fni = fn.replace(")", "")
-            fnii = fni.replace("'", "")
+            fnii = fni.replace("\"", "")
             print(fnii)
 
         #var assignment
@@ -158,4 +158,3 @@ with open(FILE, "r") as f:
         if "stop" in line:
             exit()
     f.close()
-

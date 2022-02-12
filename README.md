@@ -7,7 +7,6 @@ test.pigg
 - VARSTORSTRING.Vpigg
 - VARSTORINT.Vpigg
 - VARSTORINP.Vpigg
-- RUNIF.Vpigg
 ______________________
 
 new string test = Hello 

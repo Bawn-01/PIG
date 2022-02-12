@@ -59,7 +59,7 @@ subtract 15, 5
 divide 20, 2
 multi 5, 2
 
-println('Hello world')
+println("Hello world")
 
 new string Hello = Hello world
 call string Hello

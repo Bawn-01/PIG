@@ -5,9 +5,13 @@
 # Filetype = .pigg
 #FILE
 
+# syntax
+
+syntax = ['println', 'add', 'subtract', 'divide', 'multi', 'new string', 'call string', 'new integer', 'call integer' 'stop']
+
 from sys import exit
 
-FILE = "Test.pigg"
+FILE = "test.pigg"
 
 def __init__():
     with open("STRINGSTOR.Vpigg", "w") as f:
@@ -89,6 +93,8 @@ def callInteger(name):
 
 with open(FILE, "r") as f:
     for line in f.readlines():
+        if "//" in line:
+            continue
         # maths
         if "add" in line:
             fin = line.rstrip()
@@ -120,8 +126,7 @@ with open(FILE, "r") as f:
             fn = finn.replace("(", "")
             fni = fn.replace(")", "")
             fnii = fni.replace("'", "")
-            fnn, _, msg = fnii.partition(' ')
-            print(fnn)
+            print(fnii)
 
         #var assignment
         if "new string" in line:
@@ -150,6 +155,7 @@ with open(FILE, "r") as f:
             finn = fin.replace("call integer", "")
             fnn = finn.replace("   ", "")
             callInteger(fnn)
-        if "getmeoutahere" in line:
+        if "stop" in line:
             exit()
     f.close()
+

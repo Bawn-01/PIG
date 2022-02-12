@@ -19,7 +19,9 @@ Hello
 
 # TODO 
 
-- Var management system
+- out of syntax errors
+- Inclusion method
+- Integer Stuf
 - User Input
 
 Currently working on:

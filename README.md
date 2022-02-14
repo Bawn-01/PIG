@@ -64,6 +64,8 @@ println("Hello world")
 new string Hello = Hello world
 call string Hello
 
+// This is a comment omg
+
 new integer public age = 99999999
 call integer age
 

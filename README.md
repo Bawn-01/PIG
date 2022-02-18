@@ -22,10 +22,10 @@ Hello
 - out of syntax errors
 - Inclusion method
 - Integer Stuf
-- User Input
+- User Input (private readings, not needed until if statements are implemented)
 
 Currently working on:
-> user input
+> Inclusion method (maybe)
 
 # var mangangment system
 

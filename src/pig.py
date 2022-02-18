@@ -78,6 +78,15 @@ def callUSRpub(name):
                 finn = fin.replace(name + " ", "")
                 print(finn)
         f.close()
+    
+def callUSRpriv(name):
+    with open("USRSTOR.Vpigg", "r") as f:
+        for line in f.readlines():
+            if name in line:
+                fin = line.rstrip()
+                finn = fin.replace(name + " ", "")
+                
+        f.close()
 
 # </dificult stuf>
 
@@ -187,5 +196,9 @@ with open(FILE, "r") as f:
                 fin = line.rstrip()
                 finn = fin.replace("call input public ", "")
                 callUSRpub(finn)
+            if "private" in line:
+                fin = line.rstrip()
+                finn = fin.replace("call input private ", "")
+                callUSRpriv(finn)
     f.close()
 

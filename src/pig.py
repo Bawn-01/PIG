@@ -22,9 +22,11 @@ def __init__():
         f.close()
     with open("build.bat", "w") as f:
         f.write("@echo off\n")
-        f.write("color 0a\n")
         f.write("python pig.py\n")
         f.write("pause")
+        f.close()
+    with open("USRSTOR.Vpigg", "w") as f:
+        f.write("")
         f.close()
 
 __init__()
@@ -59,6 +61,25 @@ def assignIntegerPRIV(name, val):
     with open("INTSTOR.Vpigg", "a") as f:
         f.write("private" + " " + name + " " + val + "\n")
     f.close()
+
+# <dificult stuf>
+
+def writeUSR(name):
+    with open("USRSTOR.Vpigg", "a") as f:
+        inp = input()
+        f.write(name + " " + inp)
+    f.close()
+
+def callUSRpub(name):
+    with open("USRSTOR.Vpigg", "r") as f:
+        for line in f.readlines():
+            if name in line:
+                fin = line.rstrip()
+                finn = fin.replace(name + " ", "")
+                print(finn)
+        f.close()
+
+# </dificult stuf>
 
 
 
@@ -155,6 +176,16 @@ with open(FILE, "r") as f:
             finn = fin.replace("call integer", "")
             fnn = finn.replace("   ", "")
             callInteger(fnn)
-        if "stop" in line:
+        if "STOP" in line:
             exit()
+        if "new input" in line:
+            fin = line.rstrip()
+            finn = fin.replace("new input ", "")
+            writeUSR(finn)
+        if "call input" in line:
+            if "public" in line:
+                fin = line.rstrip()
+                finn = fin.replace("call input public ", "")
+                callUSRpub(finn)
     f.close()
+

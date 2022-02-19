@@ -76,7 +76,7 @@ STOP
 - but it will also create a new .bat file called build
 - this is what you open now to compile your file
 
-<NOTE> open up the pig.py file and in it change the FILE variable to the name of your file </NOTE>
+<NOTE> NOTE: open up the pig.py file and in it change the FILE variable to the name of your file </NOTE>
 
 # Things that need to be implemented:
 - if statements

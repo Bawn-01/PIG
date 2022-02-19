@@ -17,7 +17,7 @@ test.pigg
 - User Input (private readings, not needed until if statements are implemented)
 
 Currently working on:
-> Inclusion method (maybe)
+> Inclusion method (maybe), Integer Stuf
 
 # var mangangment system
 

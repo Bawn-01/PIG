@@ -7,14 +7,6 @@ test.pigg
 - VARSTORSTRING.Vpigg
 - VARSTORINT.Vpigg
 - VARSTORINP.Vpigg
-______________________
-
-new string test = Hello 
-call string test
-
-# output
-
-Hello
 ```
 
 # TODO 
@@ -54,23 +46,28 @@ To create a pig file do the following:
 - And in the folder make a file with the file extension .pigg
 - In the following file, I will show you some basic syntax to put in
 ```
-add 5, 5
-subtract 15, 5
-divide 20, 2
-multi 5, 2
+println("Hello")
 
-println("Hello world")
+// This is a comment (omg)
 
-new string Hello = Hello world
-call string Hello
+new string name = Sean
+call string name
 
-// This is a comment omg
-
-new integer public age = 99999999
+new integer public age = 12
 call integer age
 
-new integer private Youcantseeme = 0
-call integer private Youcantseeme
+new input lol
+call input public lol
+
+new input priv
+call input private priv
+
+add 10, 10
+subtract 25, 5
+divide 10, 2
+multi 5, 2
+
+STOP
 ```
 - Then copy pig.py from src in pig
 - paste it into your folder with the .pigg file in it
@@ -78,6 +75,8 @@ call integer private Youcantseeme
 - it will open a window and close it
 - but it will also create a new .bat file called build
 - this is what you open now to compile your file
+
+<NOTE> open up the pig.py file and in it change the FILE variable to the name of your file </NOTE>
 
 # Things that need to be implemented:
 - if statements
